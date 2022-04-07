@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0395ff27-811f-43e6-9675-0c72738e734d" name="Default Changelist" comment="" />
+    <list default="true" id="0395ff27-811f-43e6-9675-0c72738e734d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/JAVASE/TestClassInformation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/JAVASE/TestClassLoad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/JAVASE/TestFAndA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/JAVASE/TestInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/JAVASE/TestLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/JAVASE/TestObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/JAVASE/TestReflection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/backend_code/META-INF/backend_code.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/backend_code/com/JAVASE/God.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/backend_code/com/JAVASE/God.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/backend_code/com/JAVASE/TestDaemon.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/backend_code/com/JAVASE/TestDaemon.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/backend_code/com/JAVASE/You.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/backend_code/com/JAVASE/You.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/JAVASE/TestDaemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/JAVASE/TestDaemon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/0.javaSE.md" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,9 +31,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="27Ptcqs0dK0b5qhGyCR9EzyIFgf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/lib" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Algorithm/codes" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -40,9 +61,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestDaemon">
-    <configuration name="TestDaemon" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.JAVASE.TestDaemon" />
+  <component name="RunManager" selected="Application.TestFAndA">
+    <configuration name="TestClassInformation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.JAVASE.TestClassInformation" />
       <module name="backend_code" />
       <extension name="coverage">
         <pattern>
@@ -54,8 +75,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestJoin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.JAVASE.TestJoin" />
+    <configuration name="TestFAndA" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.JAVASE.TestFAndA" />
       <module name="backend_code" />
       <extension name="coverage">
         <pattern>
@@ -67,8 +88,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestPriority" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.JAVASE.TestPriority" />
+    <configuration name="TestInit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.JAVASE.TestInit" />
       <module name="backend_code" />
       <extension name="coverage">
         <pattern>
@@ -80,8 +101,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestState" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.JAVASE.TestState" />
+    <configuration name="TestLoader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.JAVASE.TestLoader" />
       <module name="backend_code" />
       <extension name="coverage">
         <pattern>
@@ -93,8 +114,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestYield" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.JAVASE.TestYield" />
+    <configuration name="TestObject" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.JAVASE.TestObject" />
       <module name="backend_code" />
       <extension name="coverage">
         <pattern>
@@ -108,11 +129,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestDaemon" />
-        <item itemvalue="Application.TestPriority" />
-        <item itemvalue="Application.TestState" />
-        <item itemvalue="Application.TestJoin" />
-        <item itemvalue="Application.TestYield" />
+        <item itemvalue="Application.TestFAndA" />
+        <item itemvalue="Application.TestObject" />
+        <item itemvalue="Application.TestClassInformation" />
+        <item itemvalue="Application.TestLoader" />
+        <item itemvalue="Application.TestInit" />
       </list>
     </recent_temporary>
   </component>
@@ -128,5 +149,18 @@
       <updated>1649233630699</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
