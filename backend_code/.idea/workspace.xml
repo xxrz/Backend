@@ -2,21 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0395ff27-811f-43e6-9675-0c72738e734d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/JAVASE/TestClassInformation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/JAVASE/TestClassLoad.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/JAVASE/TestFAndA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/JAVASE/TestInit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/JAVASE/TestLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/JAVASE/TestObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/JAVASE/TestReflection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/commons_dbcp_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/commons_pool_1_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_47.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/JDBC/DBCP.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/JDBC/JDBC1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/JDBC/JDBC2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/JDBC/JDBC3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/JDBC/utils/DBCPUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/JDBC/utils/JDBCUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/JDBC/utils/JDBCUtils1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lib/commons-dbcp-1.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lib/commons-pool-1.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lib/mysql-connector-java-5.1.47.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mysql.dbcp.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/backend_code/META-INF/backend_code.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/backend_code/com/JAVASE/God.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/backend_code/com/JAVASE/God.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/backend_code/com/JAVASE/TestDaemon.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/backend_code/com/JAVASE/TestDaemon.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/backend_code/com/JAVASE/You.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/backend_code/com/JAVASE/You.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/JAVASE/TestDaemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/JAVASE/TestDaemon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../notes/0.javaSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend_code.iml" beforeDir="false" afterPath="$PROJECT_DIR$/backend_code.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notes/1. MySQL.md" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,19 +39,34 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
   <component name="ProjectId" id="27Ptcqs0dK0b5qhGyCR9EzyIFgf" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Algorithm/codes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/lib" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Administrator\Desktop\backend_code\src\lib" />
+      <recent name="C:\Users\Administrator\Desktop\Backend\backend_code\src\com\lib" />
+      <recent name="C:\Users\Administrator\Desktop\Backend\backend_code\src" />
+      <recent name="C:\Users\Administrator\Desktop\Backend\backend_code\src\com" />
+      <recent name="C:\Users\Administrator\Desktop\Backend\backend_code\src\com\JDBC" />
+      <recent name="C:\Users\Administrator\Desktop\Backend\backend_code\src\com\JDBC\utils" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\Backend\backend_code\src\com\JDBC" />
+      <recent name="C:\Users\Administrator\Desktop\Backend\backend_code\Resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -61,13 +81,52 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestFAndA">
-    <configuration name="TestClassInformation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.JAVASE.TestClassInformation" />
+  <component name="RunManager" selected="Application.DBCP">
+    <configuration name="DBCP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.JDBC.DBCP" />
       <module name="backend_code" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.JAVASE.*" />
+          <option name="PATTERN" value="com.JDBC.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JDBC1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.JDBC.JDBC1" />
+      <module name="backend_code" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.JDBC.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JDBC2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.JDBC.JDBC2" />
+      <module name="backend_code" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.JDBC.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JDBC3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.JDBC.JDBC3" />
+      <module name="backend_code" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.JDBC.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -88,52 +147,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestInit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.JAVASE.TestInit" />
-      <module name="backend_code" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.JAVASE.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestLoader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.JAVASE.TestLoader" />
-      <module name="backend_code" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.JAVASE.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestObject" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.JAVASE.TestObject" />
-      <module name="backend_code" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.JAVASE.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DBCP" />
+        <item itemvalue="Application.JDBC3" />
+        <item itemvalue="Application.JDBC1" />
+        <item itemvalue="Application.JDBC2" />
         <item itemvalue="Application.TestFAndA" />
-        <item itemvalue="Application.TestObject" />
-        <item itemvalue="Application.TestClassInformation" />
-        <item itemvalue="Application.TestLoader" />
-        <item itemvalue="Application.TestInit" />
       </list>
     </recent_temporary>
   </component>
