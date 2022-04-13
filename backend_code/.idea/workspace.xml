@@ -2,26 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0395ff27-811f-43e6-9675-0c72738e734d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/commons_dbcp_1_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/commons_pool_1_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_47.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/JDBC/DBCP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/JDBC/JDBC1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/JDBC/JDBC2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/JDBC/JDBC3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/JDBC/utils/DBCPUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/JDBC/utils/JDBCUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/JDBC/utils/JDBCUtils1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/lib/commons-dbcp-1.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/lib/commons-pool-1.6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/lib/mysql-connector-java-5.1.47.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mysql.dbcp.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend_code.iml" beforeDir="false" afterPath="$PROJECT_DIR$/backend_code.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../notes/1. MySQL.md" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
