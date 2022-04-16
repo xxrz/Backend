@@ -30,4 +30,50 @@ public class UserMapperTest {
         // 3.关闭sqlSession连接
         sqlSession.close();
     }
+
+    @Test
+    public void testUserById(){
+        SqlSession sqlSession = MybatisUtils.getSqlSession();
+
+        UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+        User user= mapper.getUserById(1);
+        System.out.println(user);
+
+        sqlSession.close();
+    }
+
+    @Test
+    public void addUser() {
+        SqlSession sqlSession = MybatisUtils.getSqlSession();
+        UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+        User user = new User(5, "dao","23");
+        mapper.addUser(user);
+        // 增删改要用事务提交
+        sqlSession.commit();
+        sqlSession.close();
+    }
+
+    @Test
+    public void updateUser() {
+        SqlSession sqlSession = MybatisUtils.getSqlSession();
+        UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+        User user = new User(5, "hiIIhi","23");
+        mapper.updateUser(user);
+        sqlSession.commit();
+        sqlSession.close();
+    }
+
+    @Test
+    public void deleteUser() {
+        SqlSession sqlSession = MybatisUtils.getSqlSession();
+        UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+        User user = new User(5, "hiIIhi","23");
+        mapper.updateUser(user);
+        sqlSession.commit();
+        sqlSession.close();
+    }
+
+
+
+
 }

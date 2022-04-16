@@ -8,13 +8,19 @@
 
     <!--结果集映射-->
     <!--id对应于select语句中的resultMap，将两者建立联系。  type对应返回值类型-->
-    <resultMap id="UserMapper" type="User">
+    <!--resultMap id="UserMapper" type="User">
         <!-- column = 数据库中的字段，property = 实体类中的属性，将两者做匹配 -->
-        <result column="pwd" property="password"></result>
-    </resultMap>
+        <!--result column="pwd" property="password"></result>
+    </resultMap-->
 
     <!-- id=接口方法名  resultType=接口返回的类型 -->
     <select id="getUserList" resultType="com.test.pojo.User">
         select * from mybatis.user
     </select>
+
+    <select id="getUserById" resultType="com.test.pojo.User">
+    <!--取变量-->
+        select * from mybatis.user where id = #{id}
+    </select>
+
 </mapper>
