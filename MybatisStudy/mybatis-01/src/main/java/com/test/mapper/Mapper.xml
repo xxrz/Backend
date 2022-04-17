@@ -5,8 +5,50 @@
 
 <!-- namespace：绑定对应Mapper接口 -->
 <mapper namespace="com.test.mapper.UserMapper">
+
+    <!--结果集映射-->
+    <!--id对应于select语句中的resultMap，将两者建立联系。  type对应返回值类型-->
+    <!--resultMap id="UserMapper" type="User">
+        <!- column = 数据库中的字段，property = 实体类中的属性，将两者做匹配 -->
+    <!--result column="pwd" property="password"></result>
+</resultMap-->
+
     <!-- id=接口方法名  resultType=接口返回的类型 -->
     <select id="getUserList" resultType="com.test.pojo.User">
         select * from mybatis.user
     </select>
+
+    <insert id="addUser" parameterType="com.test.pojo.User">
+        <!-- 传值用% -->
+        <!--对象中的属性可以直接取出来-->
+        insert into mybatis.user (id, name, pwd) values (#{id}, #{name}, #{pwd});
+    </insert>
+
+    <update id="updateUser" parameterType="com.test.pojo.User">
+        <!-- #{} 括号中的名称需与字段名相同 -->
+        update mybatis.user set name = #{name} where id = #{id}
+    </update>
+
+
+    <delete id="deleteUser" parameterType="int">
+        delete from mybatis.user where id = #{id}
+    </delete>
+
+
+    <!--万能的map-->
+    <select id="getUserById1" parameterType="map" resultType="com.test.pojo.User">
+        <!-- 这里的idnum可以任意命名，可不与表中属性名相同 -->
+        <!-- 我的不可以任意命名 -->
+        select * from mybatis.user where id = #{id}
+    </select>
+
+
+    <select id="getUserLike" resultType="com.test.pojo.User">
+        select * from mybatis.user where name like "%"#{values}"%"
+    </select>
+
+    <select id="getUserLimit" parameterType="map" resultType="com.test.pojo.User">
+    select * from mybatis.user limit #{startIndex}, #{page}
+</select>
+
 </mapper>

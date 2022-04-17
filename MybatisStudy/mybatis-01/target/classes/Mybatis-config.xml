@@ -18,7 +18,10 @@
 
     <!--每一个Mapper.xml都需要在Mybatis核心配置文件中注册-->
     <mappers>
-        <mapper resource="com/test/mapper/Mapper.xml"/>
+<!--        <mapper resource="com/test/mapper/Mapper.xml"/>-->
+
+        <mapper class="com.test.mapper.UserMapper"></mapper>
+
     </mappers>
 
 </configuration>

@@ -9,7 +9,7 @@
     <!--结果集映射-->
     <!--id对应于select语句中的resultMap，将两者建立联系。  type对应返回值类型-->
     <!--resultMap id="UserMapper" type="User">
-        <!-- column = 数据库中的字段，property = 实体类中的属性，将两者做匹配 -->
+        <!- column = 数据库中的字段，property = 实体类中的属性，将两者做匹配 -->
         <!--result column="pwd" property="password"></result>
     </resultMap-->
 

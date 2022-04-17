@@ -10,6 +10,10 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>mybatis-01</module>
+        <module>mybatis-02</module>
+        <module>mybatis-03</module>
+        <module>mybatis-04</module>
+        <module>mybatis-05</module>
     </modules>
 
     <dependencies>
@@ -31,6 +35,12 @@
             <artifactId>junit</artifactId>
             <version>4.12</version>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
         </dependency>
 
     </dependencies>
@@ -55,6 +65,10 @@
             </resource>
         </resources>
     </build>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 
 
 </project>

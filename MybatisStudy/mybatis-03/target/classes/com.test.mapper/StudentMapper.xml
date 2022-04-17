@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 绑定对应Mapper接口 -->
+<mapper namespace="com.test.mapper.StudentMapper">
+
+    <!--    1.按照查询嵌套处理->子查询 -->
+    <select id="getStudents" resultType="com.test.pojo.Student">
+        select * from mybatis.student
+    </select>
+
+
+</mapper>

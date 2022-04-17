@@ -18,20 +18,14 @@
         select * from mybatis.user
     </select>
 
-    <select id="getUserById" resultType="com.test.pojo.User">
-    <!--取变量-->
-        select * from mybatis.user where id = #{id}
-    </select>
-
     <insert id="addUser" parameterType="com.test.pojo.User">
         <!-- 传值用% -->
         <!--对象中的属性可以直接取出来-->
         insert into mybatis.user (id, name, pwd) values (#{id}, #{name}, #{pwd});
     </insert>
 
-
     <update id="updateUser" parameterType="com.test.pojo.User">
-            <!-- #{} 括号中的名称需与字段名相同 -->
+        <!-- #{} 括号中的名称需与字段名相同 -->
         update mybatis.user set name = #{name} where id = #{id}
     </update>
 
@@ -41,8 +35,20 @@
     </delete>
 
 
+    <!--万能的map-->
+    <select id="getUserById1" parameterType="map" resultType="com.test.pojo.User">
+        <!-- 这里的idnum可以任意命名，可不与表中属性名相同 -->
+        <!-- 我的不可以任意命名 -->
+            select * from mybatis.user where id = #{id}
+    </select>
 
 
+    <select id="getUserLike" resultType="com.test.pojo.User">
+        select * from mybatis.user where name like "%"#{values}"%"
+    </select>
 
+    <select id="getUserLimit" parameterType="map" resultType="com.test.pojo.User">
+    select * from mybatis.user limit #{startIndex}, #{page}
+</select>
 
 </mapper>

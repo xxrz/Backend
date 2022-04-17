@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 绑定对应Mapper接口 -->
+<mapper namespace="com.test.mapper.BlogMapper">
+
+    <!--    1.基于子查询实现-->
+    <insert id="addBlog" parameterType="blog">
+        insert into mybatis.blog (id, title, author, createTime, views)
+        values (#{id},#{title},#{author},#{createTime},#{views});
+
+    </insert>
+
+</mapper>
