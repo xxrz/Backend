@@ -7,6 +7,8 @@ import org.apache.ibatis.session.SqlSession;
 import org.junit.Test;
 
 import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
 
 
 public class BlogMapperTest {
@@ -43,5 +45,21 @@ public class BlogMapperTest {
         // 3.关闭sqlSession连接
         sqlSession.close();
     }
+
+    @Test
+    public void quarrBlogs(){
+        SqlSession sqlSession = MybatisUtils.getSqlSession();
+        BlogMapper mapper = sqlSession.getMapper(BlogMapper.class);
+
+        HashMap map  = new HashMap();
+        map.put("title","1====================");
+
+        List<Blog> blogs = mapper.quarrBlogs(map);
+
+        for (Blog blog : blogs) {
+            System.out.println(blog);
+        }
+    }
+
 
 }

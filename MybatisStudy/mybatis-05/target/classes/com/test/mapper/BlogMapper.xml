@@ -3,14 +3,25 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<!-- °ó¶¨¶ÔÓ¦Mapper½Ó¿Ú -->
+<!-- ç»‘å®šå¯¹åº”MapperæŽ¥å£ -->
 <mapper namespace="com.test.mapper.BlogMapper">
 
-    <!--    1.»ùÓÚ×Ó²éÑ¯ÊµÏÖ-->
+    <!--    1.åŸºäºŽå­æŸ¥è¯¢å®žçŽ°-->
     <insert id="addBlog" parameterType="blog">
         insert into mybatis.blog (id, title, author, createTime, views)
         values (#{id},#{title},#{author},#{createTime},#{views});
 
     </insert>
+
+    <select id="quarrBlogs" parameterType="map" resultType="blog">
+        select * from mybatis.blog where 1=1
+        <if test ="title !=null">
+        and title = #{title}
+        </if>
+
+        <if test ="author !=null">
+            and author = #{title}
+        </if>
+    </select>
 
 </mapper>
