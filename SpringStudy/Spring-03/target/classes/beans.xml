@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd"
+>
+
+    <!--    1.配置数据源：driver、url、用户信息等-->
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
+        <property name="url" value="jdbc:mysql://localhost:3306/mybatis?useUnicode=true&amp;characterEncoding=utf8&amp;useSSl=true"></property>
+        <property name="username" value="root"></property>
+        <property name="password" value="141592"></property>
+    </bean>
+
+    <!--    2.配置SqlSessionFactory-->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <!--        关联数据源-->
+        <property name="dataSource" ref="dataSource"></property>
+        <!--        关联mybatis configLocation:关联到mybatis-config.xml文件，可将一些设置放入该文件 mapperLocation：关联到mapper.XML文件,类似于mybatis配置文件中mappers -->
+        <property name="configLocation" value="classpath:mybatis-config.xml"></property>
+        <property name="mapperLocations" value="classpath:com/test/mapper/UserMapper.xml"></property>
+    </bean>
+
+    <!--    3.注册sqlSessionTemple，等价于mybatis中得sqlSession，关联sqlSessionFactory-->
+    <bean id="sqlSessionTemple" class="org.mybatis.spring.SqlSessionTemplate">
+        <!--        只能构造器注入-->
+        <constructor-arg index="0" ref="sqlSessionFactory"></constructor-arg>
+    </bean>
+
+    <!-- 5. 注册事务的bean -->
+    <!--配置声明式事务-->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+
+    <!-- 6. 配置事务通知 -->
+    <!--添加业务的方法-->
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+        <tx:attributes>
+            <!--配置哪些方法使用什么样的事务,配置事务的传播特性。REQUIRED：如果当前没有事务，就新建一个事务，如果已存在一个事务中，加入到这个事务中，这是最常见的选择。-->
+            <tx:method name="add" propagation="REQUIRED"/>
+            <tx:method name="delete" propagation="REQUIRED"/>
+            <tx:method name="update" propagation="REQUIRED"/>
+            <tx:method name="search*" propagation="REQUIRED"/>
+            <tx:method name="get" read-only="true"/>
+            <tx:method name="*" propagation="REQUIRED"/>
+        </tx:attributes>
+    </tx:advice>
+
+    <!-- 7. 配置aop织入事务 切入点-->
+    <aop:config>
+        <!--mapper下的所有方法都编入事务-->
+        <aop:pointcut id="txPointcut" expression="execution(* com.test.mapper.*.*(..))"/>
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="txPointcut"/>
+    </aop:config>
+
+</beans>
