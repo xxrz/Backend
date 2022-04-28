@@ -3,29 +3,29 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<!-- namespace£º°ó¶¨¶ÔÓ¦Mapper½Ó¿Ú -->
+<!-- namespaceï¼šç»‘å®šå¯¹åº”MapperæŽ¥å£ -->
 <mapper namespace="com.test.mapper.UserMapper">
 
-    <!--½á¹û¼¯Ó³Éä-->
-    <!--id¶ÔÓ¦ÓÚselectÓï¾äÖÐµÄresultMap£¬½«Á½Õß½¨Á¢ÁªÏµ¡£  type¶ÔÓ¦·µ»ØÖµÀàÐÍ-->
+    <!--ç»“æžœé›†æ˜ å°„-->
+    <!--idå¯¹åº”äºŽselectè¯­å¥ä¸­çš„resultMapï¼Œå°†ä¸¤è€…å»ºç«‹è”ç³»ã€‚  typeå¯¹åº”è¿”å›žå€¼ç±»åž‹-->
     <!--resultMap id="UserMapper" type="User">
-        <!- column = Êý¾Ý¿âÖÐµÄ×Ö¶Î£¬property = ÊµÌåÀàÖÐµÄÊôÐÔ£¬½«Á½Õß×öÆ¥Åä -->
+        <!- column = æ•°æ®åº“ä¸­çš„å­—æ®µï¼Œproperty = å®žä½“ç±»ä¸­çš„å±žæ€§ï¼Œå°†ä¸¤è€…åšåŒ¹é… -->
     <!--result column="pwd" property="password"></result>
 </resultMap-->
 
-    <!-- id=½Ó¿Ú·½·¨Ãû  resultType=½Ó¿Ú·µ»ØµÄÀàÐÍ -->
+    <!-- id=æŽ¥å£æ–¹æ³•å  resultType=æŽ¥å£è¿”å›žçš„ç±»åž‹ -->
     <select id="getUserList" resultType="com.test.pojo.User">
         select * from mybatis.user
     </select>
 
     <insert id="addUser" parameterType="com.test.pojo.User">
-        <!-- ´«ÖµÓÃ% -->
-        <!--¶ÔÏóÖÐµÄÊôÐÔ¿ÉÒÔÖ±½ÓÈ¡³öÀ´-->
+        <!-- ä¼ å€¼ç”¨% -->
+        <!--å¯¹è±¡ä¸­çš„å±žæ€§å¯ä»¥ç›´æŽ¥å–å‡ºæ¥-->
         insert into mybatis.user (id, name, pwd) values (#{id}, #{name}, #{pwd});
     </insert>
 
     <update id="updateUser" parameterType="com.test.pojo.User">
-        <!-- #{} À¨ºÅÖÐµÄÃû³ÆÐèÓë×Ö¶ÎÃûÏàÍ¬ -->
+        <!-- #{} æ‹¬å·ä¸­çš„åç§°éœ€ä¸Žå­—æ®µåç›¸åŒ -->
         update mybatis.user set name = #{name} where id = #{id}
     </update>
 
@@ -35,10 +35,10 @@
     </delete>
 
 
-    <!--ÍòÄÜµÄmap-->
+    <!--ä¸‡èƒ½çš„map-->
     <select id="getUserById1" parameterType="map" resultType="com.test.pojo.User">
-        <!-- ÕâÀïµÄidnum¿ÉÒÔÈÎÒâÃüÃû£¬¿É²»Óë±íÖÐÊôÐÔÃûÏàÍ¬ -->
-        <!-- ÎÒµÄ²»¿ÉÒÔÈÎÒâÃüÃû -->
+        <!-- è¿™é‡Œçš„idnumå¯ä»¥ä»»æ„å‘½åï¼Œå¯ä¸ä¸Žè¡¨ä¸­å±žæ€§åç›¸åŒ -->
+        <!-- æˆ‘çš„ä¸å¯ä»¥ä»»æ„å‘½å -->
         select * from mybatis.user where id = #{id}
     </select>
 
