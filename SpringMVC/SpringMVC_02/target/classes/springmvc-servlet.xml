@@ -4,13 +4,14 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <!--处理器映射器HandlerMapping:查找访问的url-->
+    <!--2.处理器映射器HandlerMapping:查找访问的url-->
     <bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>
 
     <!--处理器适配器HandlerAdapter：controller将处理好的数据返回给HandlerAdapter-->
     <bean class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter"/>
 
     <!--视图解析器ViewResolver：将后端处理好的数据和视图传给DispatchServlet，DS再交给ViewResolver先解析一遍，确认无误再传给前端-->
+    <!--1.获取modelandview的数据；2. 解析modelandview的视图名字;3.拼接视图名字，找到对应视图/web-inf/jsp/hello.jsp;4.渲染-->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" id="internalResourceViewResolver">
         <!-- 拼接视图名称 WEB-INF/jsp/xxxxx.jsp -->
         <property name="prefix" value="/WEB-INF/jsp/" />
@@ -18,5 +19,6 @@
     </bean>
 
     <!--BeanNameUrlHandlerMapping处理器：绑定请求页面的url，绑定操作业务的控制器-->
+    <!--handler-->
     <bean id="/hello" class="com.test.controller.HelloController"/>
 </beans>
