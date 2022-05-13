@@ -1,0 +1,65 @@
+卷 Windows-SSD 的文件夹 PATH 列表
+卷序列号为 ACC7-E3EA
+C:.
+│  content.txt
+│  pom.xml
+│  SSMBuild.iml
+│  
+├─.idea
+│  │  .gitignore
+│  │  compiler.xml
+│  │  dataSources.local.xml
+│  │  dataSources.xml
+│  │  jarRepositories.xml
+│  │  misc.xml
+│  │  sqldialects.xml
+│  │  vcs.xml
+│  │  workspace.xml
+│  │  
+│  ├─artifacts
+│  │      SSMBuild_war_exploded.xml
+│  │      
+│  └─dataSources
+│      │  d5ec4219-df81-44c0-8afd-1d1b144ba58c.xml
+│      │  
+│      └─d5ec4219-df81-44c0-8afd-1d1b144ba58c
+│          └─storage_v2
+│              └─_src_
+│                  └─schema
+│                          information_schema.FNRwLQ.meta
+│                          
+├─src
+│  ├─main
+│  │  ├─java
+│  │  │  └─com
+│  │  │      └─test
+│  │  │          ├─controller
+│  │  │          ├─dao
+│  │  │          │      BookMapper.java
+│  │  │          │      BookMapper.xml
+│  │  │          │      BookMapperImpl.java
+│  │  │          │      
+│  │  │          ├─pojo
+│  │  │          │      Books.java
+│  │  │          │      
+│  │  │          └─service
+│  │  │                  BookService.java
+│  │  │                  BookServiceImpl.java
+│  │  │                  
+│  │  └─resources
+│  │          applicationContext.xml
+│  │          database.properties
+│  │          mybatis-config.xml
+│  │          spring-dao.xml
+│  │          spring-mvc.xml
+│  │          spring-service.xml
+│  │          
+│  └─test
+│      └─java
+└─web
+    │  index.jsp
+    │  
+    └─WEB-INF
+        │  web.xml
+        │  
+        └─jsp

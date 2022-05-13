@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--绑定接口-->
+<mapper namespace="com.test.dao.BookMapping">
+    <insert id="addBook" parameterType="Books">
+        insert into ssmbuild.books (bookName,bookCounts,detail)
+        values (#{bookName},#{bookCounts},#{detail})
+    </insert>
+
+    <delete id="deleteBookById" parameterType="int">
+        delete from books where bookID= #{bookId}
+    </delete>
+
+    <update id="updateBook" parameterType="Books">
+        update books
+        set bookName= #{bookName},bookCounts = #{bookCounts},detail=#{detail}
+        where bookID=#{bookId}
+    </update>
+
+    <select id="queryBookById" parameterType="int" resultType="Books">
+        select * from books
+        where bookID = #{bookId}
+    </select>
+
+    <!--没有一对多和多对一 所以返回值还是Books-->
+    <select id="queryAllBook" resultType="Books">
+        select *
+        from books;
+    </select>
+</mapper>
