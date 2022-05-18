@@ -7,10 +7,10 @@ import java.util.List;
 
 public class BookServiceImpl implements BookService{
 
-    //service 调 dao层 ：组合Dao（把数据填进去）
+    //service层 调 dao层: 组合dao
     private BookMapper bookMapper;
 
-    //使用Spring
+    //添加setter, Spring可以直接注入到mapper
     public void setBookMapper(BookMapper bookMapper) {
         this.bookMapper = bookMapper;
     }
@@ -27,6 +27,7 @@ public class BookServiceImpl implements BookService{
 
     @Override
     public int updateBook(Books books) {
+        System.out.println("BookServiceImpl:updateBook=>"+books);
         return bookMapper.updateBook(books);
     }
 
@@ -39,4 +40,11 @@ public class BookServiceImpl implements BookService{
     public List<Books> queryAllBook() {
         return bookMapper.queryAllBook();
     }
+
+    @Override
+    public Books queryBookByName(String bookName) {
+        return bookMapper.queryBookByName(bookName);
+    }
+
+
 }

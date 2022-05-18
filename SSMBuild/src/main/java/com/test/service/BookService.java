@@ -1,7 +1,7 @@
 package com.test.service;
 
 import com.test.pojo.Books;
-import org.springframework.stereotype.Service;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -20,4 +20,6 @@ public interface BookService {
 
     //查询全部的书
     List<Books> queryAllBook();
+
+    Books queryBookByName(String bookName);
 }
